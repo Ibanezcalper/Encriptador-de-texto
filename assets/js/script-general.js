@@ -31,14 +31,14 @@ function encriptar() {
     var mayus = /[A-Z]/g;
     var caracteres = /[~!@#$%^&*()_+|}{[\]\\\/?><:"`;.,áéíóúàèìòù']/g;
     if(mensaje == "") {
-      alert("no debe estar vacio");
+      alert("No debe estar vacio");
       document.getElementById("toy").style.display = "";
-      resultado(no); /* Le agregue ; */
+      resultado(no);
     } else if (mensaje.match(mayus) != mensaje.match(mayus)) {
-        alert("No puede contener mayusculas");
+        alert("No puede contener mayúsculas");
         document.getElementById("toy").style.display = "";
     } else if (mensaje.match(caracteres) != mensaje.match(caracteres)) {
-       alert("no puede contener acentos ni caracteres especiales");
+       alert("No puede contener acentos y/o caracteres especiales");
         document.getElementById("toy").style.display = "";
     } else {
         for (var i = 0; i < mensaje.length; i++) {
@@ -82,7 +82,7 @@ function desencriptar(){
         resultado(no);
         document.getElementById("toy").style.display = "";
     } else if (mensaje.match(mayus)!= mensaje.match(mayus)) {
-        alert("No se admiten mayusculas")
+        alert("No se admiten mayúsculas")
         resultado(no);
         document.getElementById("toy").style.display = "";
     }else if (mensaje.match(caracteres) != mensaje.match(caracteres)) {
